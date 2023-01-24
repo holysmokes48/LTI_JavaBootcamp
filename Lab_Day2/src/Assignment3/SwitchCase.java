@@ -2,21 +2,37 @@
 
 package Assignment3;
 
-import java.util.stream.IntStream;
-
-public class SwitchCase {
-	
-	public static void main(String args[]) {
-		
-		// grades range (0-100)
-		int grade = 74;
-		String letter;
-		
+import java.util.Scanner;
+ 
+public class SwitchCase{
+	public static void main(String[] args) {
+		Scanner userInput = new Scanner(System.in);
+		System.out.print("Please enter the grade : ");
+ 
+		String grade = userInput.next();
+		grade = grade.toUpperCase();
 		switch (grade) {
+		case "A":
+			System.out.println("Grade Range: 80 - 100");
+			break;
 			
-		case ((grade >= 80) && (grade <= 100)): 
-			letter= "A";
-		
+		case "B":
+			System.out.println("Grade Range: 73 - 79");
+			break;
+			
+		case "C":
+			System.out.println("Grade Range: 65 - 72");
+			break;
+			
+		case "D":
+			System.out.println("Grade Range: 55 - 64");
+			break;
+			
+		case "E":
+			System.out.println("Grade Range: 0 - 55");
+			break;
+		default:
+            System.out.println("Grade does not exist");
 		}
-		
 	}
+}
