@@ -17,10 +17,14 @@ public class DemoArray {
 		System.out.println("Matrix 2:");
 		displayMatrix(secondArrayMatrix);
 		
-		System.out.println("Sum of the Matrices");
-		int sum[][] = sumMatrix(firstArrayMatrix, secondArrayMatrix);
-		displayMatrix(sum);
-		
+		System.out.println("\nSum of the Matrices:");
+		int sumArrayMatrix[][] = new int[2][3];
+		for(int i = 0; i < 2; i++){    
+			for(int j = 0; j<3; j++){    
+				sumArrayMatrix[i][j] = firstArrayMatrix[i][j] + secondArrayMatrix[i][j];     
+			}    
+		}   
+		displayMatrix(sumArrayMatrix);
 		
 	}
 
@@ -32,21 +36,6 @@ public class DemoArray {
 			}
 			System.out.println();
 		}
-
-	}
-	
-	public static int[][] sumMatrix (int [][] array1, int [][] array2) {
-		
-		int [][] sumArray = {{}}; 
-		
-		for(int x = 0; x < 3; x++) {
-			for(int y = 0; y < 3; y++) {
-				sumArray[x][y] = array1[x][y] + array2[x][y];
-			}
-			
-		}
-		
-		return sumArray;
 
 	}
 }

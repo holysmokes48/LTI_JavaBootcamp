@@ -2,28 +2,20 @@
 
 package Assignment6;
 
+//import java.util.Scanner;
 public class UserInput {
-	public static void main (String[] args) {
-		int number, iterations;
-		
-		//number for which multiplication table will be generated for
-		//number = Integer.parseInt(args[0]);
-		number = 9;
-		
-		//number till which multiplication table will be generated
-		//iterations = Integer.parseInt(args[1]);
-		iterations = 81;
-		
-		//Code to generate multiplication table
-		int array[][] = {{}};
-		for(int[] x : array) {
-			for(int y : x) {
-				array[y][x] = number * x;
-				System.out.print(y + "\t ");
-			}
-			System.out.println();
-		}
 
-	}
-
+    public static void main(String[] args) 
+    {
+        int number, iterations;
+        
+        number = Integer.parseInt(args[0]);
+        iterations = Integer.parseInt(args[1]);
+		
+        //for loop stops iterating through each multiple of "number" once (iterations divided number) of times
+        for(int i=0; i <= iterations/number; i++)
+        {
+            System.out.println(number + "*" + i + " = " + number*i );
+        }
+    }
 }
