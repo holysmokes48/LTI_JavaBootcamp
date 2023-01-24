@@ -1,0 +1,49 @@
+a. Identify the attributes of the Student class. What are the details that can be exposed and what details can be hidden?
+
+Exposed Details:
+- Residential Status
+- whether student is grad or post-grad
+- total number of Students
+- engineering department
+
+
+Hidden Details:
+- student ID
+- Student Name
+- Hostel Number
+- Room Number
+- Fees
+- Automated System Login Id
+- Automated System Password
+- student grades
+- student attendance
+
+
+
+
+
+b. Consider the calculation of grade for the Student. There are several student types. Let us assume that we need to write a method for the calculation. How many methods would be written? Will they have the same name and signature? Will the functionality /code in these functions remain same? 
+
+Letter Grade (A-F or Pass/Fail Option)
+GPA 		(weighted or unweighted 4.0 scale)
+Number Grade (0-100)
+
+Based on the category of grades, there would be at least 3 groups of methods for calculation. The ones that share similar functionalities will most likely be use function overloading.
+
+
+
+
+
+c. The fees have to be paid by the host-elite and by the day scholars. The host-elites need to pay hostel fees along with semester fees. The day scholars need to pay only semester fees. How many function/s would you code in the Student class and why?
+
+I would write 2 functions since the calculation of total fees depends on the residential status of the student. 
+
+
+
+
+d. For the options a,b and c identify the OOP features that would be implemented
+
+
+A) Encapsulation
+B) Inheritance, Polymorphism
+C)Polymorphism

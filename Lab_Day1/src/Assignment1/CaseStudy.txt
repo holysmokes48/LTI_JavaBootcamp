@@ -1,0 +1,36 @@
+a. Identify two cases of hierarchy in the given problem statement
+
+1) hierarchy of those who have access the automated system
+
+2) hierarchy of automated system, master list(students, courses, and lecturers), and the college in relation to the management of data
+
+
+
+b. Identify the common behavior among the day scholar, host-elite, graduate and post graduate students
+
+All three of these groups can choose 2 electives 
+
+
+c. Identify the different layers possible in this system in terms of the users of the systems
+
+- Master list (students, courses, lectures)
+- Automated System (Allocated Courses and Residential Status)
+
+- Lecturer view of Automated System
+- Student view of Automated System
+
+
+
+d. The admin staff wants to generate a report containing the scores of students in a batch in the following manner:
+
+Student Id Student Name Marks scored Lecturer Name Course registered
+
+What details should the admin staff accumulate to arrive at this detailed report?
+
+- Student id ranges
+- Total Number of Students
+- Number of Marks per course
+- what days courses are being offered
+- Course List
+- Lecturer List
+
