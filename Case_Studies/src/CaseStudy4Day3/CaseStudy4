@@ -1,0 +1,23 @@
+Scenario 1:
+
+- Inheritance isn't needed due to there being no dependent relationships existing between each mode of travel.
+
+- All modes of travel, aka the objects, will have the same structure.
+
+- see Travel2.java for further details on class structure
+
+
+Scenario 2:
+
+- Inheritance can be used in this scenario
+
+- Package tours could be the parent class
+
+- One way travel would be the child class of package tours. This is because package tours and one way travel would share more members in common that package tours and one day travel or the combo of one day travel and one way travel.
+
+- This scenario is an example of multiple inheritance where A points to B
+- Java does not support multiple inheritance due to the diamond problem that occurs because the compiler will not know which superclass method to execute.
+
+- As for one day travel, it could be combined with one way travel's features due to the how simple one day travel is compared to the other 2 travel options
+
+
