@@ -1,4 +1,4 @@
-package Assignment1;
+package Assignment2;
 
 
 public class Hostelite extends Student {
@@ -9,7 +9,14 @@ public class Hostelite extends Student {
 	
 	public Hostelite(int studentId, char studentType, String studentName, double feesPerMonth, String hostelName, int roomNumber) {
 		//accessing parent class members
-		super(studentId, studentType, studentName, hostelName, feesPerMonth);
+		//super(studentId, studentType, studentName, hostelName, feesPerMonth);
+		
+		//above line not needed because parent access modifiers is protected
+		
+		this.studentId = studentId;
+		this.studentType = studentType;
+		this.studentName = studentName;
+		this.feesPerMonth = feesPerMonth;
 		this.hostelName = hostelName;
 		this.roomNumber = roomNumber;
 		

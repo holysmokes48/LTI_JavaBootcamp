@@ -1,10 +1,10 @@
-package Assignment1;
+package Assignment2;
 
 public class Student {
-	private int studentId;
-	private char studentType;
-	private String studentName;
-	private double feesPerMonth;
+	protected int studentId;
+	protected char studentType;
+	protected String studentName;
+	protected double feesPerMonth;
 	
 	//default constructor
 	public Student() {
