@@ -2,7 +2,12 @@ package com;
 
 import java.util.Scanner;
 
+import exception.AccountCreationException;
+import exception.AccountNotFoundException;
+import exception.AccountTransactionException;
 import exception.CustomException;
+import exception.InsufficientBalanceException;
+import exception.InvalidAmountException;
 
 public class Client {
 public static void main(String[] args) {
@@ -32,9 +37,12 @@ public static void main(String[] args) {
 				amt = sc.nextFloat();
 				try {
 					opr.deposit(accNo, amt);
-				} catch (CustomException e) {
+				} catch (InvalidAmountException e) {
 					System.out.println(e.getMessage());
 				}
+				catch (AccountNotFoundException e) {
+					System.out.println(e.getMessage());
+				} 
 				break;
 			case 2:
 				System.out.println("Enter Account No.");
@@ -44,7 +52,11 @@ public static void main(String[] args) {
 				amt = sc.nextFloat();
 				try {
 					opr.withdraw(accNo, amt);
-				} catch (CustomException e) {
+				} catch (InvalidAmountException e) {
+					System.out.println(e.getMessage());
+				} catch (InsufficientBalanceException e) {
+					System.out.println(e.getMessage());
+				} catch (AccountNotFoundException e) {
 					System.out.println(e.getMessage());
 				}
 				break;
@@ -55,9 +67,9 @@ public static void main(String[] args) {
 				try {
 					System.out.println("balance is="
 							+ opr.balanceEnquiry(accNo));
-				} catch (CustomException e) {
+				} catch (AccountNotFoundException e) {
 					System.out.println(e.getMessage());
-				}
+				} 
 				break;
 			case 4:
 				System.out.println("Enter Account No.");
@@ -71,7 +83,7 @@ public static void main(String[] args) {
 
 				try {
 					opr.createAccount(accNo, amt, name);
-				} catch (CustomException e) {
+				} catch (AccountCreationException e) {
 					System.out.println(e.getMessage());
 				}
 				break;
@@ -87,7 +99,7 @@ public static void main(String[] args) {
 
 				try {
 					opr.fundTransfer(accNo, desAccNo, amt);
-				} catch (CustomException e) {
+				} catch (AccountTransactionException e) {
 					System.out.println(e.getMessage());
 				}
 				break;
