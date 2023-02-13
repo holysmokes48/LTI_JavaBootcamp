@@ -1,0 +1,32 @@
+table {
+    border:1px solid white;
+    height: 75%;
+    width:50%;
+}
+
+tr {
+    border:1px solid white;
+}
+
+.top_th {
+    color: red;
+    padding: 10px;
+    font-size: 40px;
+    background-color: cyan;
+}
+
+.alt_yw {
+    border:1px solid white;
+    color: blue;
+    padding: 10px;
+    font-size: 20px;
+    background-color: yellow;
+}
+
+.alt_gr {
+    border:1px solid white;
+    color: blue;
+    padding: 10px;
+    font-size: 20px;
+    background-color: greenyellow;
+}
