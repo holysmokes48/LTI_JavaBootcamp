@@ -1,0 +1,18 @@
+Self-Study Questions:
+
+1) In order to write H2O which tag will you use?
+Use the <sub> tag around the number 2
+
+2) In order to write A^3 which tag will you use?
+Use the <sup> tag around the number 3
+
+3) What is the use of the <strike> tag?
+It is used to strike through text, usually if you want to make that line of text irrelevant to the webpage.
+
+4) How will you underline the text using HTML?
+Use the <u> tag
+
+5) To bring an image in the center of the page, which tag will you use?
+
+You can use the center tag to center an image. Or you can use the image tag and create a css class called center in which you define the center attribute in a separate .css file.
+

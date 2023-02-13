@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Form</title>
+</head>
+<body>
+    <!--Assignment 8: Creating interactive form using HTML-->
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Form</title>
+
+    <!--Changing table border form 2px to 0px-->
+
+    <style>
+        body{
+            color:blue;
+            background-color: #9FE4FF;
+            font-size: 30px;
+            margin: 10% 20% auto;
+        }
+
+        table{
+            border: 0px solid black;
+            height: 75%;
+            width: 75%;
+        }
+
+        tr {
+            width: 75%;
+            padding: 5px;
+        }
+
+        td {
+            width: 25%;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!--Assignment 8: Creating interactive form using HTML-->
+
+    <center><h1>Apply Now</h1></center>
+    <form>
+        <!--COmment: The Entire table should be inside the table tag-->
+
+        <table> 
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="txtname" size="20"></td>
+            </tr>
+
+            <tr>
+                <td>Sex</td>
+                <td>
+                    <input type="radio" name="optradio" checked>Male
+                    <input type="radio" name="optradio" checked>Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Qualification</td>
+                <td>
+                    <input type="checkbox" name="chxbx">SSLC
+                    <input type="checkbox" name="chxbx">PUC <br>
+                    <input type="checkbox" name="chxbx">Graduate
+                    <input type="checkbox" name="chxbx">Post Graduate
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td><input type="text" name="txtemail" size="20"></td>
+            </tr>
+
+            <tr>
+                <td>Date of Birth</td>
+                <td>
+                        <select name="selmonth" size="1">
+                            <option value="1" selected="1">1</option>
+                            <option value="2" selected="2">2</option>
+                            <option value="3" selected="3">3</option>
+                            <option value="4" selected="4">4</option>
+                            <option value="5" selected="5">5</option>
+                            <option value="6" selected="6">6</option>
+                            <option value="7" selected="7">7</option>
+                            <option value="8" selected="8">8</option>
+                            <option value="9" selected="9">9</option>
+                            <option value="10" selected="10">10</option>
+                            <option value="11" selected="11">11</option>
+                            <option value="12" selected="12">12</option>
+                        </select>
+                
+                        <select name="seldate" size="1">
+                            <option value="1" selected="1">1</option>
+                            <option value="2" selected="2">2</option>
+                            <option value="3" selected="3">3</option>
+                            <option value="4" selected="4">4</option>
+                            <option value="5" selected="5">5</option>
+                            <option value="6" selected="6">6</option>
+                            <option value="7" selected="7">7</option>
+                            <option value="8" selected="8">8</option>
+                            <option value="9" selected="9">9</option>
+                            <option value="10" selected="10">10</option>
+                            <option value="11" selected="11">11</option>
+                            <option value="12" selected="12">12</option>
+                            <option value="13" selected="13">13</option>
+                            <option value="14" selected="14">14</option>
+                            <option value="15" selected="15">15</option>
+                            <option value="16" selected="16">16</option>
+                            <option value="17" selected="17">17</option>
+                            <option value="18" selected="18">18</option>
+                            <option value="19" selected="19">19</option>
+                            <option value="20" selected="20">20</option>
+                            <option value="21" selected="21">21</option>
+                            <option value="22" selected="22">22</option>
+                            <option value="23" selected="23">23</option>
+                            <option value="24" selected="24">24</option>
+                            <option value="25" selected="25">25</option>
+                            <option value="26" selected="26">26</option>
+                            <option value="27" selected="27">27</option>
+                            <option value="28" selected="28">28</option>
+                            <option value="29" selected="29">29</option>
+                            <option value="30" selected="30">30</option>
+                            <option value="31" selected="31">31</option>
+                        </select>
+                        
+                        <select name="selyear" size="1">
+                            <option value="2000" selected="2000">2000</option>
+                            <option value="2001" selected="2001">2001</option>
+                            <option value="2002" selected="2002">2002</option>
+                            <option value="2003" selected="2003">2003</option>
+                            <option value="2004" selected="2004">2004</option>
+                            <option value="2005" selected="2005">2005</option>
+                            <option value="2006" selected="2006">2006</option>
+                            <option value="2007" selected="2007">2007</option>
+                            <option value="2008" selected="2008">2008</option>
+                            <option value="2009" selected="2009">2009</option>
+                            <option value="2010" selected="2010">2010</option>
+                            <option value="2011" selected="2011">2011</option>
+                        </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Attach Resume</td>
+                <td><input type="text"><input type="file"></td>
+            </tr>
+
+            <tr>
+                <td>Comments</td>
+                <td>
+                    <textarea id="desc" name="desc" rows="10" cols="50" value="Asreet"></textarea> <br><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td> 
+                    <input type="submit" value="submit" name="sub">
+                    <input type="reset" value="Reset" name="res">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
+</body>
+</html>

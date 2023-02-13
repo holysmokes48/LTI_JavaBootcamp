@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Layout</title>
+</head>
+<body bgcolor="cyan">
+    <!--Assignment 7: Creating Tables in HTML -->
+
+    <table 
+    style = "
+        height: 90%;
+        width:100%;
+        border: -0;
+        border-spacing: 20px;
+        border-collapse: separate;
+    ">
+    <tr>
+        <th colspan="3" 
+        style="
+            color:green; 
+            font-size:45px;
+            text-align: center;
+        ">Table Layout Demo</th>
+    </tr>
+
+    <tr>
+        <td 
+        style="
+        text-align: top;
+        height: 75%;
+        width:25%;
+        ">
+            <ul>
+                <li><a href="https://www.zillow.com">Home</a></li>
+                <li><a href="https://www.zillow.com">About</a></li>
+                <li><a href="https://www.zillow.com">Festivals</a></li>
+                <li><a href="https://www.zillow.com">Search</a></li>
+                <li><a href="https://www.zillow.com">Contact Us</a></li>
+            </ul>
+        </td>
+
+        <td style ="
+            background-image:url(spiral.jpg);
+            width:50%;
+            height:75%; 
+            background-size:cover;
+        "></td>
+
+        <td 
+        style="
+            color:green; 
+            height: 75%;
+            width:25%;
+        ">
+            <p>Table width will determine how much of the browser space (horizontally) will be used to display your table. there are two basic ways to accomplish this by percent and by pixels. Pixels can be though of as the smallest logical unit for display. Pixel resolution can vary from PC to PC.</p>
+        </td>
+
+    </tr>
+
+</body>
+</html>

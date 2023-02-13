@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Questions</title>
+</head>
+<body>
+    <!--Assignment 8: Creating interactive form using HTML-->
+    <h1>Form Question</h1>
+    <!--Comment: Form elements should be inside a form tag-->
+    <form name="fq" method="post" action="formquestion.jsp">
+
+    <h3>Please select your favorite Web language:</h3>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label><br>
+
+        <input type="radio" id="none" name="fav_language" value="none">
+        <label for="javascript">None of the Above</label><br>
+        
+        <br>
+
+    <h3>Explain your choice above</h3>
+    <textarea id="desc" name="desc" rows="10" cols="50" value="Asreet"></textarea> <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
