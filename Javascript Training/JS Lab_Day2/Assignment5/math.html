@@ -4,7 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Math</title>
+    <script>
+
+        //source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
+        }
+
+        //document.write(getRandomInt(1,10))
+
+        let randomInt = getRandomInt(1,10)
+        let numString = ""
+
+        switch(randomInt) {
+            case 1:
+                numString="one"
+                document.write(`Random number is: ${numString}`)
+                break
+            case 2:
+                numString="two"
+                document.write(`Random number is: ${numString}`)
+                break
+            case 3:
+                numString="three"
+                break
+            case 4:
+                numString="four"
+                document.write(`Random number is: ${numString}`)
+                break
+            case 5:
+                numString="five"
+                document.write(`Random number is: ${numString}`)
+                break
+            case 6:
+                numString="six"
+                document.write(`Random number is: ${numString}`)
+                break
+            case 7:
+                numString="seven"
+                document.write(`Random number is: ${numString}`)
+                break
+            case 8:
+                numString="eight"
+                document.write(`Random number is: ${numString}`)
+                break
+            case 9:
+                numString="nine"
+                document.write(`Random number is: ${numString}`)
+                break
+            case 10:
+                numString="ten"
+                document.write(`Random number is: ${numString}`)
+                break
+            default:
+                document.write("No valid number")
+        }
+    </script>
 </head>
 <body>
     <!--Assignment 5: External File and Built In Objects -->

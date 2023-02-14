@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date1</title>
+    <script>
+        const d=new Date()
+        /* Date Object created with current date */
+
+        var year=d.getUTCFullYear()
+        /* getYear() returns the current year */
+        var day = d.getDate()
+        //var month = d.getMonth()
+
+        //store abbreviated month name in array 
+        const monthNames = ["Jan", "Feb", "Mar","Apr", "May", "Jun","Jul", "Aug", "Sept", "Oct", "Nov", "Dec"]
+
+        //month is set to the numerical version of what d.getMonth() returns
+        var month = monthNames[d.getMonth()]
+
+        
+
+        //document.write(day)
+        //document.write(month)
+        //document.write(year)
+        document.write(`Today's date: ${day}-${month}-${year} <br>`)
+
+ 
+    </script>
+</head>
+<body>
+    <!--Assignment 5: External File and Built In Objects -->
+</body>
+</html>

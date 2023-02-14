@@ -4,7 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Email</title>
+    <script>
+        let email="jack@@yahoo.com"
+        let occA = 0    //counter of @ ocurrences
+        let occP = 0    //counter of . ocurrences
+
+        if(email.indexOf("@") > 0) { 
+            occA++
+            if(email.lastIndexOf("@") > 0) { //if first (@) occurrence is found, look for second ocurrence
+                occA++
+                if(email.index(".") > 0) { //if second ocurrence is found look for first (.)
+                occP++
+                    if(email.lastindexOf(".") > 0) { //if second ocurrence is found look for first (.)
+                        occP++
+                        document.write("<br>@ occurs " + occA)
+                        document.write("<br>. occurs " + occP)
+                    }
+                    else {
+                        document.write("<br>@ occurs " + occA)
+                        document.write("<br>. occurs " + occP)
+                    }
+                }
+    
+                else {
+                    document.write("<br>@ occurs " + occA)
+                    document.write("<br>. occurs " + occP)
+                }
+            }
+            else {
+                document.write("<br>@ occurs " + occA)
+                document.write("<br>. occurs " + occP)
+
+            }
+
+        }   
+        
+
+        else {
+                document.write("<br>@ occurs " + occA)
+                document.write("<br>. occurs " + occP)
+        }
+         
+
+    </script>
 </head>
 <body>
     <!--Assignment 5: External File and Built In Objects -->
