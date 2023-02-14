@@ -4,7 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Numarg</title>
+    <script language = "JavaScript">
+
+        //Comments: function does not have any arguments, but arguments array will store the arguments
+        function dispStr() {
+
+            var sum = 0
+            var avg = 0
+            for(i=0; i<arguments.length; i++) {
+                sum += arguments[i]
+            }
+
+            return avg = sum/arguments.length
+        }
+
+        //Comments: Calling function with three arguments
+        document.write("10, 10, 10")
+        document.write("<br>Average is " + dispStr(10, 10, 10))
+        //Comments: Calling function with 5 arguments
+        document.write("<br><br>20, 20, 20, 20, 20")
+        document.write("<br>Average is " + dispStr(20, 20, 20, 20, 20))
+    </script>
 </head>
 <body>
     <!--Assignment 4: Functions and Dialog Boxes-->

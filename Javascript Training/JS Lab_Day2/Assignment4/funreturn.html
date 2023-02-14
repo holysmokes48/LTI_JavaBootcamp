@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FunReturn</title>
+    <script language = "JavaScript">
+        function addFun(num1, num2) {
+            //Comments: Returning value to the calling environment
+
+            return num1+num2
+        }
+    </script>
 </head>
 <body>
     <!--Assignment 4: Functions and Dialog Boxes-->
+    <h1>Function Demo</h1>
+    <!--Comments: More than one script tag can be used in a document-->
+
+    <script language = "JavaScript">
+        document.write("<h1>Sum is " + addFun(20,50) + "</h1>")
+    </script>
 </body>
 </html>

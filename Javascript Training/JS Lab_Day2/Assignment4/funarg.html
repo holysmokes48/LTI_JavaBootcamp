@@ -4,7 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FunArg</title>
+    <script language = "JavaScript">
+
+        //Comments: function does not have any arguments, but arguments array will store the arguments
+        function dispStr() {
+
+            for(i=0; i<arguments.length; i++) {
+                document.write(arguments[i]+" ")
+            }
+        }
+
+        //Comments: Calling function with three arguments
+        dispStr("lone", "1two", "1three")
+        document.write("<br>")
+        //Comments: Calling function with 5 arguments
+        dispStr("2one", "2two", "2three", "2four", "2five")
+    </script>
 </head>
 <body>
     <!--Assignment 4: Functions and Dialog Boxes-->

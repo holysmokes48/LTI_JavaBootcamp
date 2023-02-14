@@ -4,7 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Power</title>
+    <script language = "JavaScript">
+        function power(arg1, arg2) {
+            //Comments: Returning value to the calling environment
+            var pw = arg1
+            for (let i = 1; i < arg2; i++) {
+                pw *= arg1 
+            }
+            return pw
+        }
+
+        document.write("Power is " + power(2,4))
+    </script>
 </head>
 <body>
     <!--Assignment 4: Functions and Dialog Boxes-->
