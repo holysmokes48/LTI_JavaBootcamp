@@ -9,4 +9,35 @@
 <body>
     <!--Assignment 6: Working with DOM & Important Objects -->
 </body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mainclose</title>
+    <script language="JavaScript"> 
+    //function openNew(){
+        /* Comments : To open a file „newwin.html‟ in a window by name
+        „newone‟ */
+        // newwin=window.open("newwin.html","newone");
+        // }
+
+        function openNew(){ 
+            newwin=window.open("newwin.html","newone","width=300; height=400;toolbar=no");
+        }
+
+        function closeWin()
+        {
+            /* Comments: newwin is the reference of the new window */ 
+            newwin.close();
+        }
+    </script>
+</head>
+<body>
+    <!--Assignment 6: Working with DOM & Important Objects -->
+    <font color="red" size="5"> Main Window</font>
+        <input type="button" value=" Open " onClick="openNew()">
+        <input type="button" value=" Close " onClick="closeWin()">
+</body>
 </html>

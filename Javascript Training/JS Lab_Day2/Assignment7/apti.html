@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Apti</title>
+    <script>
+        var rad = ["Bill Clinton", "Bill gate", "Mark Anderson", "Tim Berners Lee"]
+
+        var choice = document.querySelector('input[name="rad"]:checked')  
+        document.write(choice)
+
+        function isCorrect() {
+            //var choice = document.getElementById("radio");
+            
+            if(choice == rad[0]){
+                alert("Correct!")
+            }
+
+            else{
+                alert("Wrong!")
+            }
+        }
+
+
+    </script>
 </head>
 <body>
     <!--Assignment 7: Working with Form and ELements -->
+
+    <form>
+        <p>Who is the founder of microsoft?</p>
+
+        <input type="radio" name="rad" value="Bill Clinton">
+        <label for="html">Bill Clinton</label>
+
+        <input type="radio" name="rad" value="Bill gate">
+        <label for="html">Bill gate</label>
+
+        <input type="radio" name="rad" value="Mark Anderson">
+        <label for="css">Mark Anderson</label>
+        
+        <input type="radio" name="rad" value="Tim Berners Lee"><br>
+        <label for="css">Tim Berners Lee</label>
+
+        <center>
+            <button type="submit" onclick="isCorrect()">Check</button>
+        </center>
+    </form>
+
 </body>
 </html>

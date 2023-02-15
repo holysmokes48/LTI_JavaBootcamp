@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AddNum</title>
+    <script>
+        function add() {
+            
+            var num1, num2, sum;
+            num1 = parseInt(document.getElementById("num1").value);
+            num2 = parseInt(document.getElementById("num2").value);
+            sum = num1 + num2;
+            document.getElementById("result").value = sum;
+
+        }
+    </script>
 </head>
 <body>
     <!--Assignment 7: Working with Form and ELements -->
+
+        <p>Num1 <input id="num1"></p>
+        <p>Num2 <input id="num2"></p>
+        <p>Result <input id="result"></p>
+        <button onclick="add()">Submit</button>
+        
 </body>
 </html>

@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Select</title>
+    <script language="JavaScript"> 
+        function disp()
+        {
+            ind = document.f1.webs.selectedIndex;
+            /*Comments : index of the selected Item */
+            alert("the value is \n"+document.f1.webs.options[ind].value); alert("the text is \n"+document.f1.webs.options[ind].text);
+        }
+    </script>
+
 </head>
 <body>
     <!--Assignment 7: Working with Form and ELements -->
+
+    <form name="f1">
+        <select name="webs" onchange="disp()">
+        <option value="1"> http://sparsh</a>
+        <option value="2"> http://kshop
+        <option value="3"> http://172.21.20.155/
+        <option value="4">http://enr.ad.Asreet.com/
+        </select>
+    </form>
 </body>
 </html>

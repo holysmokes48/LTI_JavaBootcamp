@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MainForm1</title>
 </head>
 <body>
     <!--Assignment 7: Working with Form and ELements -->
+
+    <h1> Form Demo</h1>
+        <!-- Comments: Creating a form with name ‗frm1 -->
+        <!-- <form name="frm1" action="actionpage.html" method="get"> -->
+        <form name="frm1" action="actionpage.html" method="post">
+            <input type="text" name="txt1" value="Asreet"><br>
+            <!-- Comments: onClick of the following submit button the action attribute of form reflects the functionality to be carried out further  -->
+
+            <!-- <input type="button" value="submit"> -->
+            <!-- No output because button type cannot submit data -->
+
+            <input type="button" value="Submit" onClick="document.frm1.submit()">
+        </form>
 </body>
 </html>

@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>URL</title>
+    <script>
+         document.getElementById("url").textContent = document.URL;
+
+
+        function openDoc() {
+            let url = "https://www.yahoo.com"
+            window.open(url)
+        }
+    </script>
 </head>
 <body>
     <!--Assignment 6: Working with DOM & Important Objects -->
+    <p id="urlText">
+        URL:<br />
+        <span id="url">https://www.yahoo.com</span>
+    </p>
+      
+    <button onClick="openDoc()">Change</button>
 </body>
 </html>
